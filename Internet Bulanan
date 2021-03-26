@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+main(){
+	int tarif =100, PPN =25;
+	int totalMB,biayaInternet,totalBayar,totalPajak;
+	div_t nilaiPPN;
+	
+	
+
+	
+printf ("PROGRAM PERHITUNGAN BIAYA INTERNET SEBULAN\n\n\n");
+printf ("Masukkan jumlah internet anda selama sebulan dalam MB \t: ");
+scanf ("%d",&totalMB);
+
+	biayaInternet = totalMB *tarif;
+	
+	nilaiPPN =div(totalMB,2);
+	totalPajak = nilaiPPN.quot*PPN;
+	
+	totalBayar = biayaInternet + totalPajak;
+
+printf ("Maka Total biaya internet bulanan anda adalah sebesar \t: Rp.%d",totalBayar);
+printf ("\n\nDengan rincian sebagai berikut : \n");
+printf ("Tarif penggunaan internet/megabyte adalah \t: Rp.%d \n",tarif);
+printf ("Biaya internet bulanan anda adalah \t\t: Rp.%d \n",biayaInternet);
+printf ("Pajak pertambahan nilai (PPN) adalah \t\t: Rp.%d\n",totalPajak);
+
+
+return 0;
+	
+}
