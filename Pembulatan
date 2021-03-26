@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+main(){
+	
+	float x,y, hasilatas, hasilbawah;	
+	
+	printf ("PROGRAM MEMBULATKAN ANGKA KE ATAS DAN KE BAWAH\n\n");
+	
+	
+	printf ("Program Pembulatan Ke Atas \n");
+	printf ("Masukkan angka desimal \t: ");
+	scanf ("%f",&x);
+	
+	printf ("\n\nProgram Pembulatan Ke bawah \n");
+	printf ("Masukkan angka desimal \t: ");
+	scanf ("%f",&y);
+	
+	hasilatas = ceil (x);
+	hasilbawah = floor (y);
+	
+	printf ("\n\nHasil Pembulatan ke atas bilangan tersebut adalah\t%.2f",hasilatas);
+	printf ("\nHasil Pembulatan ke bawah bilangan tersebut adalah\t%.2f",hasilbawah);
+	return 0;
+	
+}
