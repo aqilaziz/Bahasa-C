@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+main(){
+	float nilai,hasil;
+	
+	printf ("PROGRAM MENGHITUNG AKAR BILANGAN \n\n");
+	
+	
+	printf ("Masukkan sebuah bilangan \t: ");
+	scanf ("%f",&nilai);
+	
+	hasil =sqrt(nilai);
+	
+	printf ("\nJadi akar dari bilangan %.2f adalah %.2f",nilai,hasil);
+
+	
+	
+	return 0;
+	
+}
