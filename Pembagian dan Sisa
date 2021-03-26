@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+main(){
+	int x,y;
+	div_t hasil;
+	
+	printf ("PROGRAM MENGHITUNG PEMBAGIAN BILANGAN DAN SISANYA \n\n");
+	
+	
+	printf ("Menghitung bilangan x dibagi y muncul hasil dan sisanya \n\n");
+	printf ("Masukkan nilai x \t: ");
+	scanf ("%d",&x);
+	
+	printf ("Masukkan nilai y \t: ");
+	scanf ("%d",&y);
+	
+	hasil =div(x,y);
+	
+	printf ("\nJadi bilangan %d dibagi %d hasilnya %d sisa %d",x,y,hasil.quot,hasil.rem);
+
+	
+	
+	return 0;
+	
+}
