@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+
+main(){
+
+int i =5;
+
+if (i!=0)
+	printf ("Nilai i adalah 0");
+else
+	printf ("Nilai i bukan nol");
+}
