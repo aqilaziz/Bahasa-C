@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+main ()
+{
+	printf ("Nama Santri \t\t: Aqil Aziz\n");
+	printf ("Tempat, Tgl. Lahir \t: Lamongan, 23 Maret 2005\n");
+	printf ("Jabatan \t\t: Guru\n");
+	printf ("Alamat \t\t\t: Paciran Lamongan Jawa Timur\n");
+	
+	
+}
