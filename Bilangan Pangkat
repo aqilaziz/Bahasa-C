@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+main(){
+	int x,y,hasil;
+	
+	printf ("PROGRAM MENGHITUNG BILANGAN BERPANGKAT \n\n");
+	
+	
+	printf ("Menghitung bilangan x pangkat y \n\n");
+	printf ("Masukkan nilai x \t: ");
+	scanf ("%d",&x);
+	
+	printf ("Masukkan nilai y \t: ");
+	scanf ("%d",&y);
+	
+	hasil =pow(x,y);
+	
+	printf ("\nJadi bilangan %d pangkat %d hasilnya %d",x,y,hasil);
+
+	
+	
+	return 0;
+	
+}
