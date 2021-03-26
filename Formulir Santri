@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+main ()
+{
+	int nis,tahun,umur;
+	char nama [40];
+	
+	printf ("\t\t Formulir Biodata Santri\n\n\n");
+	printf ("Masukkan Nama Santri \t: ");
+	gets (nama);
+	
+	printf ("Masukkan NIS \t\t: ");
+	scanf ("%d",&nis);
+	
+	printf ("Masukkan Tahun Lahir \t: ");
+	scanf ("%d",&tahun);
+	
+	printf ("\n+++++++++++++++++++++++++++++++++++++++++++++++\n\n");
+	printf ("\t DATA LENGKAP SANTRI\n");
+	printf ("PONDOK PESANTREN KARANGASEM PACIRAN\n");
+	printf ("\t     TAHUN 2015\n\n");
+	
+	printf ("Nama Lengkap \t: Tuan %s \n",nama);
+	printf ("NIS Santri \t: %d \n",nis);
+	umur = 2021 - tahun;
+	printf ("Umur Santri \t: %d Tahun",umur);
+	
+}
