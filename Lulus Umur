@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+
+main(){
+
+char nama [50];
+int umur;
+
+
+printf ("\tPROGRAM PENDAFTARAN PEGAWAI\n\t BERDASARKAN KRITERIA UMUR\n\n");
+
+printf ("Masukkan nama peserta \t: ",nama);
+gets(nama);
+printf ("Masukkan umur peserta \t: ",umur);
+scanf ("%d",&umur);
+
+printf ("\n");
+
+if (umur>=20 && umur <=30)
+	printf ("Umur %s masih %d tahun, sehingga dinyatakan LULUS",nama,umur);
+else
+	printf ("Umur %s sudah mencapai %d tahun, sehingga dinyatakan GAGAL",nama,umur);
+
+
+}
