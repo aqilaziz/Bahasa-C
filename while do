@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main (){
+	int x;
+	char lagi;
+	
+	
+	do{
+		
+		printf ("PROGRAM UJI COBA\n\n");
+		printf ("Masukkan angka yang anda inginkan = ");
+		scanf ("%d",&x);
+		if (x>50)
+		{
+			printf ("LULUS");
+		}
+		else{
+			printf ("GAGAL");
+		}
+	printf ("\n\n");
+	printf ("Apakah anda ingin lagi? (y/t) : ");
+	scanf ("%s",&lagi);
+	}
+	while (lagi =='y'|| lagi=='Y');
+	return 0;
+	
+}
