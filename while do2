@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main (){
+	int i, jumlah, harga=15000, bayar,bayar2, diskon;
+	char lagi;
+	
+	printf ("\t\t-----------------------------------\n");
+	printf ("\t\t PROGRAM PEMBELIAN KRIPIK KENTANG\n");
+	printf ("\t\t    Harga = 15.000/ per bungkus\n");
+	printf ("\t\t-----------------------------------\n\n\n");
+do{
+	
+	printf ("Jumlah beli? \t= ");
+	scanf ("%d",&jumlah);
+	bayar = jumlah * harga;
+	printf ("Bayar \t \t= %d buah X Rp. %d \n\t\t= Rp. %d",jumlah,harga,bayar);
+	
+	if (jumlah>=10){
+		diskon = 10000;
+		printf ("\n\n\t SELAMAT !!! ANDA MENDAPATKAN DISKON");
+		printf ("\n\t\t JUMLAH PEMBELIAN MINIMAL 10");
+		printf ("\n\t SEBESAR Rp. %d",diskon);
+		
+		}
+	else
+	{
+		printf ("\n\n\t MA'AF' !!! ANDA TIDAK MENDAPATKAN POTONGAN HARGA");
+		printf ("\n\t\t JUMLAH PEMBELIAN KURANG DARI 10");
+		}
+	bayar2 = bayar - diskon;
+	printf ("\n\n\nBayar \t= Rp. %d - Rp. %d \n\t= Rp. %d", bayar, diskon, bayar2);
+	printf ("\n\n\n\n\nApakah anda ingin melakukan transaksi lagi? (y/t) ");
+scanf ("%s",&lagi);
+}
+
+while (lagi=='y');
+	return 0;
+	
+}
