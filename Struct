@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+typedef struct
+{
+	char *nama;
+	int nilaimtk, nilaiindo, nilaitik, nilaiarab;
+}raportsiswa;
+
+
+int main ()
+{
+	raportsiswa r;
+	printf ("Masukkan nama siswa : ");
+	char str [30];
+	scanf ("%s",&str);
+	r.nama=str;
+	
+	printf ("Nilai Mapel Matematika : ");
+	scanf ("%i",& r.nilaimtk);
+	
+	printf ("Nilai Mapel B. Indonesia : ");
+	scanf ("%i",& r.nilaiindo);
+	
+	printf ("Nilai Mapel TIK : ");
+	scanf ("%i",& r.nilaitik);
+	
+	printf ("Nilai Mapel B. Arab : ");
+	scanf ("%i",& r.nilaiarab);
+	
+	printraportsiswa (&r);
+}
+
+void printraportsiswa (raportsiswa *r)
+{
+	int ratarata = (r->nilaimtk+r->nilaiindo+r->nilaitik+r->nilaiarab)/4;
+	
+	printf ("\n\nNilai siswa yang bernama : %s\nKeselurahan rata-rata adalah : %i",r->nama, ratarata);
+}
